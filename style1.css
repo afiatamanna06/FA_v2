@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Cute+Font|Montserrat|Roboto');
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(1.jpg);
+    height: 100vh;  /* <!100%>background image styles are given here*/
+    background-size: cover;
+    background-position: center;
+    }
+header{
+  position: absolute;
+  top: 0;/*header style as logo and navigation bar background style*/
+  left: 0;
+  padding: 30px 60px;
+  background: #081551;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+}
+header .logo{
+  color: #fff;
+  font-family: "Roboto",sans-serif;
+  height: 50px;
+  line-height: 50px;
+  font-size: 45px;
+  float: left;
+  font-weight: bold;
+}
+.loginPage{
+    width: 360px;/*form width*/
+    padding: 200px 0 0;/*padding from form to navigation bar*/
+    margin: auto;
+}
+.form{
+    position: relative;
+    z-index: 1;
+    background: #2e57f7;/*light-blue color of login form*/
+    max-width: 360px;
+    padding: 45px;/*padding of login page as distance from from to email password field*/
+    margin: 0 auto 100px;/*if I change 100 to 80 scrolling bar reduces*/
+    text-align: center;/* not registered? register is at center because of it*/
+}
+
+.form input{
+  font-family: "Roboto",sans-serif;/*email box enternal writing style*/
+  outline: 1;
+  background: #f4f4f4;
+  width: 100%;/*size of email and password box*/
+  border: 0;/* border of email and password box*/
+  margin: 10 0 0;/*email password internal space creator*/
+  padding: 15px;/*email and pass box's internal padding*/
+  box-sizing: border-box;
+  font-size: 15px;/* writing on email box text size*/
+}
+
+.form button{
+  font-family: "Roboto", sans-serif;/*button text writing style*/
+  text-transform: uppercase;/* for 'LOG IN' uppercase*/
+  outline: 0;
+  margin: 10 0 0;/*password field and login button's internal space*/
+  background: #0f0e75;/*login button's dark blue background*/
+  width: 100%;/*size of button*/
+  border: 0;/* no border at button*/
+  /*border-color: #0f2a54;*/
+  color: #ffffff;/*text color in button*/
+  cursor: pointer;/*cursor style at button*/
+  font-size: 15px;/*button text size*/
+  padding: 15px;/*padding at button as distance from button to text*/
+
+}
+
+.form button:hover,.form button:active{
+  background: #1312a8;/*when cursor is at button, background color of button*/
+}
+
+.form .message{
+  font-size: 12px;/* 'not registered?' writing size*/
+  font-family: 'Montserrat', cursive;/* 'not registered?' writing style */
+}
+
+.form .message a{
+  color: #0f0e9e;/* 'register' writing color*/
+  font-size: 12px;/* 'register' writing size*/
+  font-weight: bold;/* 'register' writing in bold*/
+  font-family: "Roboto", sans-serif;/* 'register' writing font*/
+  text-decoration: none;
+}
+.form .signupForm{
+  display: none;
+}
